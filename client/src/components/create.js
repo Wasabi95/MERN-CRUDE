@@ -1,11 +1,7 @@
 // components/create.js
 import React, { useState } from "react";
 
-
-
-
-export default function Create() {
-  
+export default function Create() {  
   const [form, setForm] = useState({
     name: "",
     position: "",
@@ -21,7 +17,6 @@ export default function Create() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
    
     try {
       const response = await fetch("http://localhost:5050/record", {

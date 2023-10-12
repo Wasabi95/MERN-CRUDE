@@ -1,3 +1,4 @@
+//db/conn.mjs
 import { MongoClient } from "mongodb";	
 	
 const connectionString = process.env.ATLAS_URI || "";	
