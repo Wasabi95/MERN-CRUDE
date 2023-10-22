@@ -1,4 +1,6 @@
 //db/conn.mjs
+//db/conn.mjs
+//db/conn.mjs
 import { MongoClient } from "mongodb";	
 	
 const connectionString = process.env.ATLAS_URI || "";	
@@ -12,6 +14,11 @@ conn = await client.connect();
 console.error(e);	
 }	
 	
-let db = conn.db("wasabi_training");	
+let db = conn.db("mytraining");	
 	
 export default db;	
+
+
+
+
+
